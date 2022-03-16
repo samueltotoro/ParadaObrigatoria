@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Parada.com.br</title>
+    <link rel="stylesheet" type="text/css" href="Style/Style.css" />
+</head>
+
+<body onload="inicializaJS()">
+
+    <header class="header">
+        <nav class="menu">
+            <img src="Img/logo.png" class="responsiva" width="60px" height="60px">
+            <h4><strong> Parada Obrigatoria Delivery</strong></h4>
+            <ul>
+
+                <li><a href="Index.html">Home</a></li>
+                <li>
+                    <a href="Pedidos.html">Sabores</a>
+                </li>
+                <li>
+                    <a href="FaleConosco.html">Fale Conosco</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <div class="Container">
+        <div class="Cep">
+            <input type="search" id="search" placeholder="Digite o Cep..." />
+            <button class="icon">><i class="fa fa-search"></i></button>
+        </div>
+        <br><br><br>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+            <div class="numbertext">1/3</div>
+            <img src="Img/01.jpg" alt="" style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="text">
+<h1>Promoção <strong>#Todaagalera!!!!</strong></h1>
+<h3>Na compra de três pizzas de Calabresa tamanho familia ganhe uma coca 3l!!!</h3>
+            </div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2/3</div>
+            <img src="Img/02.jpg" alt="" style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="text"><h1>10%Off!!!!</h1>
+                <h3>Na primeira comprar, bora conferir!!</h3></div>
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3/3</div>
+            <img src="Img/03.jpg" alt="" style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="text">
+<h1><strong>Não deixe a fome esperando...</strong></h1>
+<h3>Pede uma pizza vegana ta com  <strong>10% de desconto</strong>.</h3>
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+          <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          </div>    
+          </div>
+     
+    <br>
+    <div class="Sabores1">
+        <center>
+            <h1><span class="Sabores2">Sabores e tamanhos</span></h1>
+    </div>
+    </center>
+    <div class="Pizzas">
+        <ul class="Salgadas">
+            <h2>Pizzas Salgadas</h2>
+            <h4>
+                <strong>
+                    <li>
+                        <h1>Pizza de Calabresa</h1>
+                    </li>
+                    <li>
+                        <h2>Pizza de alho e oleo</h2>
+                    </li>
+                    <li>
+                        <h2>Pizza à Portuguesa</h2>
+                    </li>
+                    <li>
+                        <h2>Pizza de Filé Mignom</h2>
+                    </li>
+                </strong>
+            </h4>
+        </ul>
+        <br>
+        <ul class="Veganas">
+            <h1>Pizzas Veganas</h1>
+            <strong>
+                <li>
+                    <h2>Pizza de Calabresa Vegana</h2>
+                </li>
+                <li>
+                    <h2>Pizza de alcachofra</h2>
+                </li>
+                <li>
+                    <h2>Pizza de Mussarela de Castanha</h2>
+                </li>
+            </strong>
+        </ul>
+    </div>
+    <br>
+    <div class="Tamanhos">
+        <div>
+            <div class="Circ1">
+           
+            </div><br>
+            <div class="Circ3">
+           
+            </div>
+            <br>
+            <center>
+                <div class="Circ2">
+           
+                </div>
+        </div>
+        </center>
+    </div>
+    <br>
+    <div class="Expecificacao">
+        <div class="expe1">
+            <strong>
+                <h2>Pequena</h2>
+                <h3>4 fatias</h3>
+                <h3>22cm</h3>
+                <h3>Até 4 sabores</h3>
+            </strong>
+        </div>
+
+        <br>
+        <div class="expe3">
+            <strong>
+                <h2>Gigante</h2>
+                <h3> 10 fatias</h3>
+
+                <h3> 35cm</h3>
+
+                <h3>Até 10 sabores</h3>
+            </strong>
+        </div>
+        <br>
+        <center>
+            <div class="expe2">
+                <strong>
+                    <h2>Normal</h2>
+                    <h3>8 fatias</h3>
+                    <h3>30cm</h3>
+                    <h3 class="alin">Até 8 sabores</h3>
+                </strong>
+            </div>
+        </center>
+    </div>
+    <br><br>
+    <br>
+
+
+
+
+
+
+<div class="form-position">
+        <form action="parada.html" method="POST" name="Formulario" onsubmit="return ValidaDados()">
+            <div>
+            <label for="lblnome">Nome:</label>
+            <input type="text" name="txtnome" id="txtnome">
+            <span class="msg-erro msg-nome"></span>
+            </label>
+            
+        </div>
+        <br><br>    
+        <div>
+                <label for="lblendereco">Endereço:</label>
+            <input type="text" name="txtendereco" id="txtendereco">
+            <span class="msg-erro msg-endereco"></span>
+        </label>
+            </div>
+            <br><br>
+<div>
+            <label for="lblemail">E-mail:</label>
+            <input type="text" name="txtemail" id="txtemail">
+            <span class="msg-erro msg-email"></span>
+            </label>
+        </div>
+            <br><br>
+            <div>
+                <label for="lbltamanho">Tamanho e Sabor:</label>
+            <input type="text" name="txttamanho" id="txttamanho">
+            <span class="msg-erro msg-tamanho"></span>
+            </label>
+            </div>
+<br><br>
+
+<div>
+    <label for="lblobs">Observações:</label>
+    <textarea id='txtobs'></textarea>
+    <span class="msg-erro msg-obs"></span>
+    </label>
+</div>
+
+
+<br><br>
+            <div><select name="pagamento" id="pagamento">
+                <option value="">Forma de pagamento</option>
+                <option value="pix">Pix</option>
+                <option value="nub">Nubank</option>
+                <option value="fis">Fisico</option>
+            </select></div>
+        <br><br> 
+        <div>   
+            <input type="submit" value="Cadastrar Pedido"></div>
+        </form>
+    </div>
+    </div>
+   
+    <script type="text/javascript" src="Script/Script.js"></script>
+</body>
+<footer class="final">
+    © 2021-2022 Parada Obrigatoria Delivery. all rights reserved.
+</footer>
+
+</html>
